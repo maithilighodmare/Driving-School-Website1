@@ -1,89 +1,100 @@
-/* Basic styling for the navbar */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #2d3748; /* bg-gray-800 */
-  z-index: 1000;
-  padding: 10px 20px;
+/* Resetting Margins and Padding */
+body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-header .container {
+/* General Navbar Styles */
+.navbar {
+  
   display: flex;
-  justify-content: space-between; /* Ensures space between logo and nav */
-  align-items: center; /* Aligns items vertically in the center */
-  width: 100%;
-}
-
-header h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(245, 222, 179, 0.244) ;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100vw; 
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-nav {
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00b894; 
+  cursor: pointer;
+}
+.logo img {
+  height: 35px;
+  width: 35px;
+}
+.navbar ul{
+  margin-right: 80px;
+}
+.nav-links {
   display: flex;
+  list-style: none;
   gap: 20px;
-  flex-wrap: wrap; /* Ensures that the nav items wrap to the next line if needed */
+  margin: 0; 
+  padding: 0; 
 }
 
-nav a {
+.nav-links li a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-links li a:hover {
+  color: #00b894; /* Hover effect */
 }
 
-/* Hide the nav items by default on small screens */
-nav.hidden {
+/* Hamburger Menu */
+.hamburger {
   display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
 }
 
-/* Responsive design */
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  header {
-    padding: 15px;
-  }
-
-  header h1 {
-    font-size: 1.2rem;
-  }
-
-  .container {
+  .nav-links {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-200%); /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    gap: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 80%; /* Adjust width to make it look better */
   }
 
-  nav {
-    width: 100%;
-    flex-direction: column; /* Stack the nav items vertically */
-    align-items: center; /* Center the nav items */
-    gap: 10px;
-    padding-top: 10px; /* Space between logo and nav items */
+  .nav-links.open {
+    transform: translateX(-50%) translateY(0); /* Keep it centered */
   }
 
-  nav a {
-    width: 100%; /* Make each link full-width */
-    text-align: center;
-    padding: 10px 0;
+  .hamburger {
+    display: flex;
   }
 
-  /* Hamburger button */
-  button {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  svg {
-    width: 24px;
-    height: 24px;
+  .nav-links li {
+    text-align: center; /* Center the menu items */
   }
 }
