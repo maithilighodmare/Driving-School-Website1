@@ -2,9 +2,11 @@ import React from "react";
 
 const Trainer = () => {
   return (
-    <div style={styles.container}>
+    <div id="trainer" style={styles.container}>
+       
       <div style={styles.content}>
-        <h1 style={styles.heading}>Learn Driving Skills with Expert Trainers</h1>
+      <h1 style={styles.heading1}> About Us</h1>
+        <h2 style={styles.heading}>Learn Driving Skills with Expert Trainers</h2>
         <p style={styles.description}>
           Our skilled driving instructors are committed to helping you become a confident driver. With flexible schedules and personalized training plans, we ensure that your learning experience is efficient and enjoyable.
         </p>
@@ -31,18 +33,25 @@ const styles = {
   container: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between", // Space between content and image
+    justifyContent: "space-between", 
     padding: "20px",
     fontFamily: "'Arial', sans-serif",
-    gap: "20px", // Add space between content and image
+    gap: "20px", 
   },
   content: {
-    maxWidth: "50%", // Left half with text content
+    maxWidth: "50%",
   },
   heading: {
     fontSize: "2rem",
     marginBottom: "10px",
-    color: "#333",
+    color: "#0c1348",
+  },
+  heading1: {
+    color: "#0c1348",
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: '2.5rem',
+    margin: '20px 0',
   },
   description: {
     fontSize: "1rem",

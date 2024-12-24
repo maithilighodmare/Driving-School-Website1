@@ -8,6 +8,8 @@ import Home from './components/Home';
 import Login from './components/Loginpg';
 import Signup from './components/Signup';
 
+import WhatsAppButton from "./components/WhatsAppButton"; 
+
 function App() {
   return (
     <Router>
@@ -18,8 +20,10 @@ function App() {
           <Route index element={<Home />} /> {/* Default route */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          
         </Route>
       </Routes>
+      <WhatsAppButton />
     </Router>
   );
 }

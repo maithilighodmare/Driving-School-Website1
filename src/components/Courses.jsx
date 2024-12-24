@@ -36,7 +36,7 @@ const courses = [
 
 const Courses = () => {
   return (
-    <div className="courses-section">
+    <div id="Courses" className="courses-section">
       <h2 className="courses-title">Our Courses</h2>
       <div className="courses-container">
         {courses.map((course, index) => (

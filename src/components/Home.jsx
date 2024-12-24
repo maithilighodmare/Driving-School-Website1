@@ -15,7 +15,7 @@ import Certifications from './Certifications';
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div id="home" className="home-container">
       <video autoPlay loop muted className="background-video">
         <source src="/assets/video1.mp4" type="video/mp4" />
         Your browser does not support the video tag.

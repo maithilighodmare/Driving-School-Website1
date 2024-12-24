@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: rgba(245, 222, 179, 0.244) ;
+  background-color: rgba(4, 10, 21, 0.403) ;
   color: white;
   position: sticky;
   top: 0;
@@ -22,7 +22,13 @@ body {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
   margin-top: -10px;
 }
-
+.fixed-navbar {
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0; /* Positions it at the very top */
+  left: 0;
+  right: 0;
+ 
+}
 .logo {
   font-size: 1.8rem;
   font-weight: bold;

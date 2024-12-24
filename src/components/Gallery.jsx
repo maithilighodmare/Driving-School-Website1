@@ -22,7 +22,7 @@ const Gallery = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div id="Gallery" style={styles.container}>
       <h2 style={styles.heading}>Gallery</h2>
       <div style={styles.galleryContainer}>
         <button onClick={scrollLeft} style={styles.arrowButton}>

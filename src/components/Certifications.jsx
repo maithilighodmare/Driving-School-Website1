@@ -66,13 +66,13 @@ const styles = {
   container: {
     backgroundColor: "#f4f4f9",
     textAlign: "center",
-    margin: "40px 0",
+    margin: "40px 20px",
     fontFamily: "'Roboto', sans-serif",
-    padding: "40px 20px",
+    padding: "40px 30px",
   },
   heading: {
     fontSize: "2.5rem",
-    color: "#333",
+    color: "#0c1348",
     marginBottom: "30px",
     fontWeight: "700",
   },
