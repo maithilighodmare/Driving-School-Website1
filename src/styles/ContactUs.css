@@ -1,0 +1,88 @@
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-container {
+    flex: 1 1 50%;
+    max-width: 500px;
+    margin: 30px;
+    
+   
+  }
+  
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .form-container p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .form-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-container .form-group input,
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-container .form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .form-container .submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .ip{
+    background-color: #cccde0;
+  }
+  .form-container .submit-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .map-container {
+    flex: 1 1 50%;
+    position: relative;
+    margin-top: 100px;
+   
+  }
+  
+  .map-container .info-box {
+    margin-bottom: 10px;
+  }
+  
+  .map-container h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .leaflet-map {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(171, 130, 130, 0.1);
+  }
+  

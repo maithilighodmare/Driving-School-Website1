@@ -1,0 +1,113 @@
+.courses-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: rgb(23, 23, 79);
+    background-image: url('/assets/bg1.jpg');
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .courses-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(243, 245, 246);
+  }
+  
+  .courses-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .course-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .course-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .course-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  .feature-item {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .check-icon {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .price-section {
+    margin-bottom: 15px;
+  }
+  
+  .offer-text {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .prices {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+  }
+  
+  .discounted-price {
+    color: #007bff;
+  }
+  
+  .enroll-button {
+    display: block;
+    width: 100%;
+    background-color: #f28c38;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .enroll-button:hover {
+    background-color: #e67e22;
+  }
+  
+  .learn-more {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .learn-more:hover {
+    text-decoration: underline;
+  }
+  

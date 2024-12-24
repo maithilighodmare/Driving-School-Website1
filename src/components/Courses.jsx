@@ -1,28 +1,65 @@
-import React from "react";
+import React from 'react';
+import '../styles/Courses.css'; // Import CSS for custom styling
+
+const courses = [
+  {
+    title: 'Texas Adult Drivers Ed',
+    features: [
+      'Complete Package: from Permit to Drivers License',
+      'Flexible, Convenient 6-hour Course',
+      'Take Online or In Our Free App',
+    ],
+    originalPrice: '$69.95',
+    discountedPrice: '$29',
+  },
+  {
+    title: 'California Drivers Ed',
+    features: [
+      'Unlimited practice tests included with purchase',
+      '100% permit exam pass rate',
+      'Convenient—take anywhere, anytime, on any device',
+    ],
+    originalPrice: '$59',
+    discountedPrice: '$39',
+  },
+  {
+    title: 'Ohio Drivers Ed',
+    features: [
+      "America's #1 driving school—most selected course provider",
+      'Students can take driving lessons after two hours',
+      '100% online with engaging videos, animation, and activities',
+    ],
+    originalPrice: '$75',
+    discountedPrice: '$49',
+  },
+];
 
 const Courses = () => {
-  const courseList = [
-    { title: "Choosing a Driving Instructor", image: "path-to-image" },
-    { title: "Automatic Driving Lessons", image: "path-to-image" },
-    { title: "Foreign Language Lessons", image: "path-to-image" },
-    { title: "Occupational Road Risk", image: "path-to-image" },
-  ];
-
   return (
-    <div className="container mx-auto my-12">
-      <h2 className="text-3xl font-bold text-center mb-6">Popular Courses</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {courseList.map((course, index) => (
-          <div
-            key={index}
-            className="border rounded shadow p-4 flex flex-col items-center"
-          >
-            <img
-              src={course.image}
-              alt={course.title}
-              className="h-32 w-32 mb-4"
-            />
-            <h3 className="text-xl font-semibold">{course.title}</h3>
+    <div className="courses-section">
+      <h2 className="courses-title">Our Courses</h2>
+      <div className="courses-container">
+        {courses.map((course, index) => (
+          <div className="course-card" key={index}>
+            <h3 className="course-title">{course.title}</h3>
+            <ul className="course-features">
+              {course.features.map((feature, i) => (
+                <li key={i} className="feature-item">
+                  <span className="check-icon">✔</span> {feature}
+                </li>
+              ))}
+            </ul>
+            <div className="price-section">
+              <p className="offer-text">With offer</p>
+              <p className="prices">
+                <span className="original-price">{course.originalPrice}</span>{' '}
+                <span className="discounted-price">{course.discountedPrice}</span>
+              </p>
+            </div>
+            <button className="enroll-button">Enroll Now</button>
+            <a href="#" className="learn-more">
+              Learn More
+            </a>
           </div>
         ))}
       </div>

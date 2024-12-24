@@ -1,58 +1,86 @@
 .home-container {
-    position: relative;
-    height: 100vh;
-    margin-top: -75px;
-    /* background-image: url('/assets/landingpg.jpg'); /* Replace with your image path */
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */ 
-  }
-.background-video{
-    position: absolute; 
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
+  position: relative;
+  height: 100vh;
+  margin-top: -75px;
+  padding-bottom: 50px;
+  /* Uncomment below to use a static image instead of a video */
+  /* background-image: url('/assets/landingpg.jpg'); /* Replace with your image path */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
-  
-  .home-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay for contrast */
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    padding-right: 50px; /* Adjust as needed */
-  }
-  
-  .home-content {
-    color: white;
-    text-align: center; /* Centers the text inside the content */
-  }
-  
-  .home-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .home-content p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .home-content button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #4CAF50; /* Green button color */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .home-content button:hover {
-    background-color: #45a049; /* Darker green on hover */
-  }
-  
+
+.section-wrapper {
+  padding: 50px 20px; 
+  background-color: #f9f9f9; 
+  border-bottom: 1px solid #ddd;
+  margin-top: 40px; 
+}
+.section-wrapper:nth-child(odd) {
+  background-color: #ffffff; 
+}
+.background-video {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay for contrast */
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  padding: 0 50px; /* Adjust as needed */
+}
+
+.home-content {
+  color: white;
+  text-align: center; /* Centers the text inside the content */
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.home-content button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4CAF50; /* Green button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.home-content button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Additional Sections Wrapper */
+.additional-sections {
+  background-color: #f9f9f9; /* Light background for sections below */
+  padding: 20px 0; /* Adds spacing above and below the sections */
+}
+
+/* Section Styling */
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}

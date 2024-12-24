@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -26,6 +28,15 @@ const Navbar = () => {
         <li><a href="#courses" onClick={toggleMenu}>Courses</a></li>
         <li><a href="#blog" onClick={toggleMenu}>Blog</a></li>
         <li><a href="#contact" onClick={toggleMenu}>Contact Us</a></li>
+     
+        {/* Login and Signup Buttons */}
+        <li className="nav-item ">
+        <Link to="/login" className="btn btn-login" onClick={toggleMenu}>Login</Link>
+        </li>
+        <li className="nav-item ">
+        <Link to="/signup" className="btn btn-signup" onClick={toggleMenu}>Sign Up</Link>
+        </li>
+        
       </ul>
     </nav>
   );

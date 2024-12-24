@@ -1,0 +1,63 @@
+.ready-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px; /* Add space around the section */
+  background-color: #f9f9f9; /* Optional: A light background for contrast */
+  position: relative;
+  z-index: 1; /* Ensure this section is above any background layers */
+  margin-top: 600px;
+}
+.ready-container video{
+  width: 40%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+/* .ready-container img {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 10px; /* Optional styling for the image */
+
+
+.ready-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.ready-content h1 {
+  font-size: 2.5rem;
+  color: #142864;
+  margin-bottom: 20px;
+}
+
+.ready-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.ready-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.ready-content ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.ready-content button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ready-content button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
